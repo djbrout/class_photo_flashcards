@@ -194,10 +194,6 @@ function RenderThumbnail(e, readerEvt) {
     '<div class="img-wrap"> <span class="close">&times;</span>' +
       '<img class="thumb" src="',
     e.target.result,
-    '" title="',
-    escape(readerEvt.name),
-    '" data-id="',
-    readerEvt.name,
     '"/>' + "</div>"
   ].join("");
 
