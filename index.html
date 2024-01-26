@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Student Photo Flashcards</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div>
+        <label style="font-size: 14px;">
+<!--             <span style='color:navy;font-weight:bold'>Upload your class photo list in .jpeg format</span><p></p> -->
+        </label>
+        <!--To give the control a modern look, I have applied a stylesheet in the parent span.-->
+        <span class="btn btn-success fileinput-button">
+            <span>Select Class Photos (.jpeg)</span>
+            <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif,">
+        </span>  <span class="btn btn-success" onclick="randomize()">
+            <span>Randomize</span>
+        </span>
+  <span class="btn btn-success" onClick="window.location.reload()">
+            <span>Clear</span>
+            
+        </span>
+  <br />
+        <output id="Filelist"></output>
+    </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
